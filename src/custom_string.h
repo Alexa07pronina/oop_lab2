@@ -28,6 +28,7 @@ class String {
         String wrap(size_t width) const;
         std::size_t size() const {return size_;}
         std::size_t capacity() const {return capacity_;}
+        const char* str() const noexcept {return str_;};
         void print(std::ostream& os) const noexcept;
         static constexpr std::size_t npos = -1;
         std::size_t find(const char* substr) const;
